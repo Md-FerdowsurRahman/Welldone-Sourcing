@@ -206,8 +206,8 @@
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
                 checked="checked">
             <div class="carousel-item absolute opacity-0 acive" style="height:50vh;">
-                <img src="image/slide-3.jpg" alt="Fashion model in a stunning dress, placeholder image" class="block w-full"
-                    style="height:50vh; object-fit: cover;">
+                <img src="image/slide-3.jpg" alt="Fashion model in a stunning dress, placeholder image"
+                    class="block w-full" style="height:50vh; object-fit: cover;">
             </div>
             <label for="carousel-3"
                 class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-black leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
@@ -228,8 +228,8 @@
             <!--Slide 3-->
             <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item absolute opacity-0 active" style="height:50vh;">
-                <img src="image/slide-1.jpg" alt="Fashion accessories on display, placeholder image" class="block w-full"
-                    style="height:50vh; object-fit: cover;">
+                <img src="image/slide-1.jpg" alt="Fashion accessories on display, placeholder image"
+                    class="block w-full" style="height:50vh; object-fit: cover;">
             </div>
             <label for="carousel-2"
                 class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-black leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
@@ -257,7 +257,46 @@
 
     <!-- Carousel slider end here -->
 
+    <!-- about section start here -->
 
+    <div class="bg-[#f7f4f4]">
+        <div class="max-w-7xl mx-auto px-4 py-8 bg-[#f7f4f4]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <img src="image/aboutus.jpg" alt="Fashion model posing in a black outfit, placeholder image"
+                        class="rounded shadow-lg">
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold mb-4">WELCOME TO </h2>
+                        <h3 class="text-3xl font-bold mb-4 carousel-text">Well Done Sourcing</h3>
+                        <p class="mb-4 text-justify">Well Done Sourcing Ltd is a globally-recognized fashion buying,
+                            sourcing, distributor, manufacturer & exporter company with an international scope. We are
+                            committed to excellence in the fashion industry. Our enthusiastic and entrepreneurial
+                            attitude to business has created strong relationships with buyers, manufacturers, &
+                            exporters. We have an established client base throughout Asia, Europe, America, Australia
+                            markets comprised of both independent and major retailers. Well Done Sourcing Ltd has built
+                            long-term relationships within all sectors of the fashion industry and has earned both
+                            respect and trust from the trade. Well Done Sourcing is a world class fashion show.Well Done
+                            Sourcing is a globally-recognized fashion buying, sourcing, distributor, manufacturer &
+                            exporter company with an international scope.</p>
+                        <a href="#"
+                            class="inline-block bg-[#051744] text-white font-semibold py-2 px-6 rounded hover:bg-blue-700 transition duration-300">CONTINUE
+                            READING</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- about section end here -->
+
+
+
+
+
+
+
+
+    <!-- javascipt code  -->
     <script>
         document.getElementById('menuButton').addEventListener('click', function () {
             document.getElementById('menuDrawer').classList.add('active');
@@ -267,32 +306,32 @@
         });
 
 
-        
+
     </script>
     <script>
-         document.getElementById('menuButton').addEventListener('click', function () {
-                            document.getElementById('menuDrawer').classList.add('active');
-                        });
+        document.getElementById('menuButton').addEventListener('click', function () {
+            document.getElementById('menuDrawer').classList.add('active');
+        });
 
-                        document.getElementById('closeButton').addEventListener('click', function () {
-                            document.getElementById('menuDrawer').classList.remove('active');
-                        });
-                        let slideIndex = 0;
-                        showSlides();
+        document.getElementById('closeButton').addEventListener('click', function () {
+            document.getElementById('menuDrawer').classList.remove('active');
+        });
+        let slideIndex = 0;
+        showSlides();
 
-                        function showSlides() {
-                            let i;
-                            let slides = document.getElementsByClassName("carousel-item");
-                            for (i = 0; i < slides.length; i++) {
-                                slides[i].style.opacity = "0";
-                                slides[i].classList.remove("active");
-                            }
-                            slideIndex++;
-                            if (slideIndex > slides.length) { slideIndex = 1 }
-                            slides[slideIndex - 1].style.opacity = "1";
-                            slides[slideIndex - 1].classList.add("active");
-                            setTimeout(showSlides, 2000); // Change image every 3 seconds
-                        }
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("carousel-item");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = "0";
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.opacity = "1";
+            slides[slideIndex - 1].classList.add("active");
+            setTimeout(showSlides, 2000); // Change image every 3 seconds
+        }
     </script>
 </body>
 
