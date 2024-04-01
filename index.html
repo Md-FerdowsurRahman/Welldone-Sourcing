@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,18 @@
     <link rel="stylesheet" href="style.css">
     </link>
 </head>
+
 <body class="bg-white">
-        <!-- header start here -->
+    <!-- header start here -->
     <header class="bg-white text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div class="header-content ">
                 <div class="header-logo">
-                    <a href="#"> <img class=" rounded-full ring ring-[#051744]" src="logo.jpg" alt=""></a>
+                    <a href="#"> <img class=" rounded-full ring ring-[#051744]" src="image/logo.jpg""></a>
                   
                 </div>
-                <div class="sourcing-text font-bold text-[#051744] text-lg"> 
-                    Export Oriented Buying & Sourcing House
+                <div class=" sourcing-text font-bold text-[#051744] text-lg">
+                        Export Oriented Buying & Sourcing House
                 </div>
                 <div class="social-icons ">
                     <a href="#" class="text-[#051744]">
@@ -32,7 +34,7 @@
                     <a href="#" class="ml-6 text-[#051744]">
                         <i class="fa-2x fab fa-instagram"></i>
                     </a>
-                    
+
                     <a href="#" class="ml-6 text-[#051744]">
                         <i class=" fa-2x fab fa-linkedin-in"></i>
                     </a>
@@ -192,19 +194,106 @@
             </div>
         </nav>
 
-            <!-- navbar start here -->
-        
+        <!-- navbar start here -->
+
     </header>
-        <!-- header end here -->
+    <!-- header end here -->
+
+    <!-- Carousel slider start here -->
+    <div class="carousel relative container mx-auto" style="max-width:1600px;">
+        <div class="carousel-inner relative overflow-hidden w-full">
+            <!--Slide 1-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="carousel-item absolute opacity-0 acive" style="height:50vh;">
+                <img src="image/slide-3.jpg" alt="Fashion model in a stunning dress, placeholder image" class="block w-full"
+                    style="height:50vh; object-fit: cover;">
+            </div>
+            <label for="carousel-3"
+                class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-black leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-2"
+                class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-black leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!--Slide 2-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0 active" style="height:50vh;">
+                <img src="image/slide-2.jpg" alt="Fashion showcase with a variety of clothing, placeholder image"
+                    class="block w-full" style="height:50vh; object-fit: cover;">
+            </div>
+            <label for="carousel-1"
+                class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-black leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-3"
+                class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-black leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!--Slide 3-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0 active" style="height:50vh;">
+                <img src="image/slide-1.jpg" alt="Fashion accessories on display, placeholder image" class="block w-full"
+                    style="height:50vh; object-fit: cover;">
+            </div>
+            <label for="carousel-2"
+                class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-black leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-1"
+                class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-black leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!-- Add additional indicators for each slide-->
+            <ol class="carousel-indicators">
+                <li class="inline-block mr-3">
+                    <label for="carousel-1"
+                        class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-2"
+                        class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-3"
+                        class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+    <!-- Carousel slider end here -->
 
 
     <script>
-        document.getElementById('menuButton').addEventListener('click', function() {
+        document.getElementById('menuButton').addEventListener('click', function () {
             document.getElementById('menuDrawer').classList.add('active');
         });
-        document.getElementById('closeButton').addEventListener('click', function() {
+        document.getElementById('closeButton').addEventListener('click', function () {
             document.getElementById('menuDrawer').classList.remove('active');
         });
+
+
+        
+    </script>
+    <script>
+         document.getElementById('menuButton').addEventListener('click', function () {
+                            document.getElementById('menuDrawer').classList.add('active');
+                        });
+
+                        document.getElementById('closeButton').addEventListener('click', function () {
+                            document.getElementById('menuDrawer').classList.remove('active');
+                        });
+                        let slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                            let i;
+                            let slides = document.getElementsByClassName("carousel-item");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.opacity = "0";
+                                slides[i].classList.remove("active");
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) { slideIndex = 1 }
+                            slides[slideIndex - 1].style.opacity = "1";
+                            slides[slideIndex - 1].classList.add("active");
+                            setTimeout(showSlides, 2000); // Change image every 3 seconds
+                        }
     </script>
 </body>
+
 </html>

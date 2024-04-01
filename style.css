@@ -75,3 +75,86 @@ dropdown css start here */
 .dropdown-menu .dropdown:hover .submenu {
     display: block;
 }
+
+/* dropdown css end here */
+
+/* carousel css start here */
+
+.carousel-open:checked+.carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #2b6cb0;
+    /* Control dot active color */
+}
+
+.carousel-text {
+
+    color: #2b6cb0;
+    /* Blue color */
+    font-size: 4rem;
+}
+
+/* carousel css end here */
+
+.expertise-bg {
+    background-image: url('bf.jpg');
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.product-card img {
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.20);
+}
+
+@media (max-width: 768px) {
+    .sourcing-text {
+        display: none;
+    }
+
+    .social-icons {
+        order: 2;
+        margin-top: 0.5rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}
+
+.valued-client-section {
+    background-image: url('bf.jpg');
+    background-size: cover;
+    background-position: center;
+}
