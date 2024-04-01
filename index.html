@@ -11,8 +11,9 @@
     </link>
 </head>
 <body class="bg-white">
+        <!-- header start here -->
     <header class="bg-white text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div class="header-content ">
                 <div class="header-logo">
                     <a href="#"> <img class=" rounded-full ring ring-[#051744]" src="logo.jpg" alt=""></a>
@@ -36,27 +37,174 @@
                         <i class=" fa-2x fab fa-linkedin-in"></i>
                     </a>
                 </div>
-                <button id="menuButton"
+                <!-- <button id="menuButton"
                     class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out sm:hidden">
                     <i class="fas fa-bars"></i>
-                </button>
+                </button> -->
             </div>
         </div>
-        <nav class="bg-[#051744] nav-menu py-4">
-            <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
-                <div class="flex items-center justify-center h-10">
+
+        <!-- navbar start here -->
+
+        <nav class="bg-[#051744]">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between h-16">
                     <div class="flex space-x-4">
-                        <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-                        <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Our Products</a>
-                        <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
-                        <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                        <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">News & Events</a>
-                        <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
+                        <!-- Mobile menu button -->
+                        <div class="flex items-center md:hidden">
+                            <button id="menuButton" class="text-white focus:outline-none">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <!-- Mobile menu drawer -->
+                        <div id="menuDrawer" class="fixed inset-y-0 left-0 bg-blue-800 w-64 p-4 z-50 md:hidden">
+                            <button id="closeButton" class="text-white focus:outline-none mb-4">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <a href="#" class="block py-2 px-3 text-white hover:bg-blue-700">Home</a>
+                            <div class="dropdown">
+                                <a href="#" class="block py-2 px-3 text-white hover:bg-blue-700">About Us</a>
+                                <div class="dropdown-menu">
+                                    <a href="#">Our Profile</a>
+                                    <a href="#">Our Goal</a>
+                                    <a href="#">How We Work</a>
+                                    <a href="#">Mission & Vision</a>
+                                    <a href="#">Zero Tolerance Policy</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="block py-2 px-3 text-white hover:bg-blue-700">Our Products</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown">
+                                        <a href="#">Knit</a>
+                                        <div class="submenu">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#">Woven</a>
+                                        <div class="submenu">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#">Sweater</a>
+                                        <div class="submenu">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#">Headwear (Cap)</a>
+                                        <div class="submenu">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                    <a href="#">Others</a>
+                                    <div class="dropdown">
+                                        <a href="#">Denim Top Bottom</a>
+                                        <div class="submenu">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="block py-2 px-3 text-white hover:bg-blue-700">FAQ</a>
+                            <a href="#" class="block py-2 px-3 text-white hover:bg-blue-700">Services</a>
+                            <a href="#" class="block py-2 px-3 text-white hover:bg-blue-700">News & Events</a>
+                            <a href="#" class="block py-2 px-3 text-white hover:bg-blue-700">Contact Us</a>
+                        </div>
+                        <!-- Primary Navigation Menu -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="#" class="text-white py-2 px-3 hover:bg-blue-700">Home</a>
+                            <div class="dropdown relative">
+                                <a href="#" class="text-white py-2 px-3 hover:bg-blue-700">About Us</a>
+                                <div class="dropdown-menu absolute hidden">
+                                    <a href="#">Our Profile</a>
+                                    <a href="#">Our Goal</a>
+                                    <a href="#">How We Work</a>
+                                    <a href="#">Mission & Vision</a>
+                                    <a href="#">Zero Tolerance Policy</a>
+                                </div>
+                            </div>
+                            <div class="dropdown relative">
+                                <a href="#" class="text-white  py-2 px-3 hover:bg-blue-700">Our Products</a>
+                                <div class="dropdown-menu absolute hidden">
+                                    <div class="dropdown relative">
+                                        <a href="#">Knit</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown relative">
+                                        <a href="#">Woven</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown relative">
+                                        <a href="#">Sweater</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown relative">
+                                        <a href="#">Headwear (Cap)</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                    <a href="#">Others</a>
+                                    <div class="dropdown relative">
+                                        <a href="#">Denim Top Bottom</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="text-white py-2 px-3 hover:bg-blue-700">FAQ</a>
+                            <a href="#" class="text-white py-2 px-3 hover:bg-blue-700">Services</a>
+                            <a href="#" class="text-white py-2 px-3 hover:bg-blue-700">News & Events</a>
+                            <a href="#" class="text-white py-2 px-3 hover:bg-blue-700">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
+
+            <!-- navbar start here -->
+        
     </header>
+        <!-- header end here -->
+
+
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function() {
+            document.getElementById('menuDrawer').classList.add('active');
+        });
+        document.getElementById('closeButton').addEventListener('click', function() {
+            document.getElementById('menuDrawer').classList.remove('active');
+        });
+    </script>
 </body>
 </html>
