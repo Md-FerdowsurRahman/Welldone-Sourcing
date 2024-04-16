@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welldone Soucing</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
+    </link>
+</head>
+
+<body class="bg-white">
+    <!-- header start here -->
+    <header class="bg-white text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="header-content ">
+                <div class="header-logo">
+                    <a href="index.html"> <img class=" rounded-full" src="image/logo.jpg"></a>
+
+                </div>
+                <div class=" sourcing-text font-bold text-[#051744] text-lg">
+                    Export Oriented Buying & Sourcing House
+                </div>
+                <div class="social-icons ">
+                    <a href="https://www.facebook.com/" target="_blank" class="text-[#051744]">
+                        <i class=" fa-2x fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="ml-6 text-[#051744]">
+                        <i class=" fa-2x fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="ml-6 text-[#051744]">
+                        <i class="fa-2x fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.whatsapp.com/" target="_blank" class="ml-6 text-[#051744]">
+                        <i class=" fa-2x fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/login" target="_blank" class="ml-6 text-[#051744]">
+                        <i class=" fa-2x fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <!-- <button id="menuButton"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out sm:hidden">
+                    <i class="fas fa-bars"></i>
+                </button> -->
+            </div>
+        </div>
+
+        <!-- navbar start here -->
+
+        <nav class="bg-[#051744]">
+            <div class="max-w-7xl mx-auto px-4 ">
+                <div class="flex justify-between h-16">
+                    <div class="flex space-x-4">
+                        <!-- Mobile menu button -->
+                        <div class="flex items-center md:hidden">
+                            <button id="menuButton" class="text-white focus:outline-none">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <!-- Mobile menu drawer -->
+                        <div id="menuDrawer" class="fixed inset-y-0 left-0 bg-blue-800 w-64 p-4 z-50 md:hidden">
+                            <button id="closeButton" class="text-white focus:outline-none mb-4">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <a href="index.html" class="block py-2 px-3 text-white hover:bg-blue-700">Home</a>
+                            <div class="dropdown">
+                                <a href="index.html" class="block py-2 px-3 text-white hover:bg-blue-700">About Us</a>
+                                <div class="dropdown-menu">
+                                    <a href="profile.html">Our Profile</a>
+                                    <a href="goal.html">Our Goal</a>
+                                    <a href="how-we-work.html">How We Work</a>
+                                    <a href="mission-vision.html">Mission & Vision</a>
+                                    <a href="zero.html">Zero Tolerance Policy</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="block py-2 px-3 text-white hover:bg-blue-700">Our Products</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown">
+                                        <a href="knit-products.html">Knit</a>
+                                        <div class="submenu">
+                                            <a href="knit-man.html">Men</a>
+                                            <a href="knit-women.html">Women</a>
+                                            <a href="knit-kids.html">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="woven-products.html">Woven</a>
+                                        <div class="submenu">
+                                            <a href="woven-men.html">Men</a>
+                                            <a href="woven-women.html">Women</a>
+                                            <a href="woven-kids.html">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="sweater-products.html">Sweater</a>
+                                        <div class="submenu">
+                                            <a href="sweater-men.html">Men</a>
+                                            <a href="sweater-women.html">Women</a>
+                                            <a href="sweater-kids.html">Kids</a>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="dropdown">
+                                        <a href="#">Headwear (Cap)</a>
+                                        <div class="submenu">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div> -->
+                                    <a href="cap.html">Headwear (Cap)</a>
+                                    <a href="others.html">Others</a>
+                                    <div class="dropdown">
+                                        <a href="#">Denim Top Bottom</a>
+                                        <div class="submenu">
+                                            <a href="denim-men.html">Men</a>
+                                            <a href="denim-women.html">Women</a>
+                                            <a href="denim-kids.html">Kids</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="faq.html" class="block py-2 px-3 text-white hover:bg-blue-700">FAQ</a>
+                            <a href="services.html" class="block py-2 px-3 text-white hover:bg-blue-700">Services</a>
+                            <a href="news-events.html" class="block py-2 px-3 text-white hover:bg-blue-700">News &
+                                Events</a>
+                            <a href="contact.html" class="block py-2 px-3 text-white hover:bg-blue-700">Contact Us</a>
+                        </div>
+                        <!-- Primary Navigation Menu -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="index.html" class="text-white py-2 px-3 hover:bg-blue-700">Home</a>
+                            <div class="dropdown relative">
+                                <a href="index.html" class="text-white py-2 px-3 hover:bg-blue-700">About Us</a>
+                                <div class="dropdown-menu absolute hidden">
+                                    <a href="profile.html">Our Profile</a>
+                                    <a href="goal.html">Our Goal</a>
+                                    <a href="how-we-work.html">How We Work</a>
+                                    <a href="mission-vision.html">Mission & Vision</a>
+                                    <a href="zero.html">Zero Tolerance Policy</a>
+                                </div>
+                            </div>
+                            <div class="dropdown relative">
+                                <a href="#" class="text-white  py-2 px-3 hover:bg-blue-700">Our Products</a>
+                                <div class="dropdown-menu absolute hidden">
+                                    <div class="dropdown relative">
+                                        <a href="knit-products.html">Knit</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="knit-man.html">Men</a>
+                                            <a href="knit-women.html">Women</a>
+                                            <a href="knit-kids.html">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown relative">
+                                        <a href="woven-products.html">Woven</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="woven-men.html">Men</a>
+                                            <a href="woven-women.html">Women</a>
+                                            <a href="woven-kids.html">Kids</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown relative">
+                                        <a href="sweater-products.html">Sweater</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="sweater-men.html">Men</a>
+                                            <a href="sweater-women.html">Women</a>
+                                            <a href="sweater-kids.html">Kids</a>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="dropdown relative">
+                                        <a href="#">Headwear (Cap)</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="#">Men</a>
+                                            <a href="#">Women</a>
+                                            <a href="#">Kids</a>
+                                        </div>
+                                    </div> -->
+                                    <a href="cap.html">Headwear (Cap)</a>
+                                    <a href="others.html">Others</a>
+                                    <div class="dropdown relative">
+                                        <a href="#">Denim Top Bottom</a>
+                                        <div class="submenu absolute hidden">
+                                            <a href="denim-men.html">Men</a>
+                                            <a href="denim-women.html">Women</a>
+                                            <a href="denim-kids.html">Kids</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="faq.html" class="text-white py-2 px-3 hover:bg-blue-700">FAQ</a>
+                            <a href="services.html" class="text-white py-2 px-3 hover:bg-blue-700">Services</a>
+                            <a href="news-events.html" class="text-white py-2 px-3 hover:bg-blue-700">News & Events</a>
+                            <a href="contact.html" class="text-white py-2 px-3 hover:bg-blue-700">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- navbar start here -->
+
+    </header>
+    <!-- header end here -->
+
+
+        <div class="p-8">
+            <h2 class="text-3xl font-bold text-center p-2">Contact Us</h2>
+            
+            <section class="text-gray-600 body-font relative">
+                <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+                  <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                    <!-- <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe> -->
+                    <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14601.874686092393!2d90.4111217334647!3d23.80192774093318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7ae2e36518f%3A0xa99fbb70a63e1639!2sBaridhara%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1713248247053!5m2!1sen!2sbd"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                      <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                        <p class="mt-1">Welldone Sourcing
+                            House 465 (2nd floor), Road 08,
+                            DOHS Baridhara, Cantonment,
+                            Dhaka - 1230, Bangladesh</p>
+                      </div>
+                      <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                        <a class="text-indigo-500 leading-relaxed"> info@welldonesourcing.com
+
+                        </a>
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                        <p class="leading-relaxed"> +880 1711357828
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                    
+                    <p class="leading-relaxed mb-5 text-gray-600 font-bold">Feel free to contact us</p>
+                    <div class="relative mb-4">
+                      <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                      <input type="text" placeholder="Enter Your Name" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                      <label for="name" class="leading-7 text-sm text-gray-600">Phone</label>
+                      <input type="text" placeholder="Enter Your Phone Number"  id="number" name="number" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                      <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                      <input type="email"  placeholder="Enter Your Email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                      <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                      <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                    <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                    
+                  </div>
+                </div>
+              </section>
+        </div>
+
+
+
+
+ 
+    <!-- footer start here -->
+
+    <div class="bg-[#051744] text-white p-8 grid grid-cols-1 md:grid-cols-4 gap-4 ">
+        <div>
+            <h3 class="text-xl font-bold mb-3">About Welldone Sourcing.</h3>
+            <p class="text-justify">Welldone Sourcing is a global trading company managing the source
+                of supply and the delivery of textile products. The main focus of our business is to
+                provide apparel sourcing services to our esteemed clients to allow them a most
+                satisfying buying experience.</p>
+        </div>
+        <div class="ml-12">
+
+            <h3 class="text-xl font-bold mb-3">Office Address:</h3>
+
+            <p class="mb-3">
+                <i class="fas fa-map-marker-alt "></i>
+                Welldone Sourcing<br>
+                House 465 (2nd floor), Road 08,<br>
+                DOHS Baridhara,
+                Cantonment,<br>
+                Dhaka - 1230, Bangladesh
+            </p>
+            <p class="">
+                <i class="fas fa-envelope "></i>
+                info@welldonesourcing.com
+
+
+            </p>
+            <p class="">
+                <i class="fas fa-phone-alt "></i>
+                +880 1711357828<br>
+
+            </p>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-3">Useful Links:</h3>
+            <ul class="p-2">
+                <a href="profile.html">
+                    <li class="hover:text-blue-700 underline">Our Profile</li>
+                </a>
+                <a href="goal.html">
+                    <li class="hover:text-blue-700 underline">Our Goals</li>
+                </a>
+                <a href="how-we-work.html">
+                    <li class="hover:text-blue-700 underline">How We Work</li>
+                </a>
+                <a href="mission-vision.html">
+                    <li class="hover:text-blue-700 underline">Mission & Vision</li>
+                </a>
+                <a href="zero.html">
+                    <li class="hover:text-blue-700 underline">Zero Tolerance Policy</li>
+                </a>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-3">We are on Google:</h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14601.874770984517!2d90.40296742548179!3d23.801926985751397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7ae2e36518f%3A0xa99fbb70a63e1639!2sBaridhara%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1712006022007!5m2!1sen!2sbd"
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+
+        </div>
+    </div>
+    <!-- <div class="bg-[#000e32] text-white text-center p-4">
+        © 2024 Well Done Sourcing. All rights reserved.
+        
+    </div> -->
+
+
+    <footer class="bg-[#000e32] text-white font-bold py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-gray-400">&copy; 2024 Welldone Sourcing. All rights reserved.</div>
+            <div class="flex items-center">
+                <div class="text-gray-400 mr-2">Designed and Developed by OS IT Solutions Ltd.</div>
+                <a href="https://www.ositsltd.com/" class="flex items-center">
+                    <img src="image/OSit.jpg" alt="Logo" class="h-6">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- footer end here -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- javascipt code  -->
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function () {
+            document.getElementById('menuDrawer').classList.add('active');
+        });
+        document.getElementById('closeButton').addEventListener('click', function () {
+            document.getElementById('menuDrawer').classList.remove('active');
+        });
+
+
+
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+</body>
+
+</html>
